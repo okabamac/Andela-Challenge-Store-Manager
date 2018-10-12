@@ -127,6 +127,7 @@ header[role="banner"] #hamburger {
   font-size: 30px;
   cursor: pointer;
   user-select: none;
+  display: none;
 }
 
 .show {
@@ -481,4 +482,10 @@ main[role="dashboard"] #reminder .record-form form p button {
   height: 30px;
   padding: 0;
   margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #hamburger {
+    display: block;
+  }
 }
