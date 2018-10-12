@@ -120,6 +120,24 @@ header[role="banner"] h2 {
   color: gainsboro;
 }
 
+header[role="banner"] #hamburger {
+  position: absolute;
+  top: 8px;
+  margin-left: 110px;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 header[role="banner"] ul {
   display: flex;
   float: right;
@@ -130,6 +148,7 @@ header[role="banner"] ul li {
   display: inline;
   margin-right: 30px;
 }
+
 header[role="banner"] ul li a img {
   height: 40ox;
   width: 40px;
@@ -137,6 +156,7 @@ header[role="banner"] ul li a img {
   position: relative;
   border-radius: 50%;
 }
+
 header[role="banner"] ul li .logout {
   color: #fff;
   top: 15px;
@@ -150,6 +170,7 @@ header[role="banner"] ul li .logout::before {
   content: "\f2f5";
   margin-right: 2px;
 }
+
 nav[role="navigation"] {
   position: fixed;
   top: 34px;
@@ -197,6 +218,7 @@ nav[role="navigation"] ul li .show {
   left: 0;
   width: 100%;
 }
+
 nav[role="navigation"] ul li ul li a {
   margin: 0;
   padding-top: 0;
@@ -204,7 +226,7 @@ nav[role="navigation"] ul li ul li a {
   color: rgba(168, 163, 163, 0.9);
 }
 
-nav[role="navigation"] ul li:hover > ul,
+nav[role="navigation"] ul li:hover>ul,
 nav[role="navigation"] ul li ul:hover {
   transition-delay: 0s, 0s, 0.3s;
   visibility: visible;
@@ -224,12 +246,14 @@ nav[role="navigation"] ul li ul li {
 .itemSelect {
   background-color: rgba(100, 100, 100, 0.5);
 }
+
 .dashboard .element::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
   content: "\f3fd";
   margin-right: 8px;
 }
+
 .available-products .element::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
@@ -264,6 +288,7 @@ nav[role="navigation"] ul li ul li {
   content: "\f0c0";
   margin-right: 8px;
 }
+
 main[role="dashboard"] {
   position: relative;
   margin-left: 250px;
@@ -314,6 +339,7 @@ main[role="dashboard"] #reminder .reminder-area form {
 main[role="dashboard"] #reminder .reminder-area label {
   display: block;
 }
+
 main[role="dashboard"] #reminder .reminder-area form p {
   margin: 0;
 }
@@ -322,9 +348,11 @@ main[role="dashboard"] #reminder .reminder-area form input {
   width: 50%;
   height: 40px;
 }
+
 main[role="dashboard"] #reminder .reminder-area form textarea {
   width: 100%;
 }
+
 main[role="dashboard"] #reminder .reminder-area form button {
   background-color: #d32d27;
   text-transform: uppercase;
@@ -342,20 +370,20 @@ main[role="dashboard"] .container {
   max-width: 1200px;
   top: 40px;
   margin: 0 auto;
-  padding: 1em;
   background: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
+
 main[role="dashboard"] .container .category-heading {
   margin: 40px;
 }
 
 main[role="dashboard"] .container select {
   position: absolute;
-  margin-left: 90%;
+  left: 80%;
   top: 20px;
   width: 100px;
   height: 35px;
@@ -365,24 +393,30 @@ main[role="dashboard"] .container .profile-area {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 35px;
-  margin: 0 3vw;
+  width: inherit;
+  margin: 0 auto;
 }
+
 .profile {
   padding: 10px;
   border-radius: 5px;
 }
+
 .product-image {
   height: 200px;
   width: 250px;
 }
+
 .fas {
   color: #d32d27;
   font-size: 22px;
 }
+
 button {
   border: none;
   cursor: pointer;
 }
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -403,9 +437,11 @@ tr:nth-child(even) {
 main[role="dashboard"] .container .attendants-stats {
   margin-top: 45px;
 }
+
 main[role="dashboard"] #reminder .record-form {
   top: 60px;
 }
+
 main[role="dashboard"] #reminder .record-form form {
   display: grid;
   position: relative;
@@ -419,10 +455,12 @@ main[role="dashboard"] #reminder .record-form form {
 main[role="dashboard"] #reminder .record-form form label {
   display: block;
 }
+
 main[role="dashboard"] #reminder .record-form form p input {
   height: 30px;
   width: 100%;
 }
+
 main[role="dashboard"] #reminder .record-form form p button {
   height: 30px;
   width: 100%;
@@ -443,5 +481,18 @@ main[role="dashboard"] #reminder .record-form form p button {
   width: 77px;
   height: 30px;
   padding: 0;
-  margin-right: 5px;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  header[role="banner"] #hamburger {
+    display: block;
+  }
+
+  main[role="dashboard"] .welcome,
+  main[role="dashboard"] #reminder,
+  main[role="dashboard"] .container {
+    width: 100vw;
+    margin: 0 auto;
+  }
 }
