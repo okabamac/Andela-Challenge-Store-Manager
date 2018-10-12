@@ -369,6 +369,7 @@ main[role="dashboard"] .container {
   position: relative;
   max-width: 1200px;
   top: 40px;
+  padding: 20px;
   margin: 0 auto;
   background: #fff;
   border-radius: 5px;
@@ -436,8 +437,10 @@ tr:nth-child(even) {
 }
 
 main[role="dashboard"] .container .attendants-stats {
+  padding: 20px;
   margin-top: 40px;
 }
+
 
 main[role="dashboard"] #reminder .record-form {
   top: 60px;
