@@ -15,7 +15,7 @@ cache:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: c73921faf91fea24044b8718f141a7b03161a415
   on:
     branch: gh-pages
   local_dir: "output"
