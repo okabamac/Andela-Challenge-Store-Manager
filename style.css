@@ -369,6 +369,7 @@ main[role="dashboard"] .container {
   position: relative;
   max-width: 1200px;
   top: 40px;
+  padding: 20px;
   margin: 0 auto;
   background: #fff;
   border-radius: 5px;
@@ -421,6 +422,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  margin-top: 38px;
 }
 
 td,
@@ -435,8 +437,10 @@ tr:nth-child(even) {
 }
 
 main[role="dashboard"] .container .attendants-stats {
-  margin-top: 45px;
+  padding: 20px;
+  margin-top: 40px;
 }
+
 
 main[role="dashboard"] #reminder .record-form {
   top: 60px;
