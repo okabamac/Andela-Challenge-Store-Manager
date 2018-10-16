@@ -6,4 +6,4 @@ Travis CI Badge
 [![Build Status](https://travis-ci.com/prizemac/Andela-Challenge-Store-Manager.svg?branch=feature_branch)](https://travis-ci.com/prizemac/Andela-Challenge-Store-Manager)
 
 Coverall Badge
-
+e43e63c78fb19fee3584c8529bd6894acebcd73ba048998c68eb3e11fa790e1d
