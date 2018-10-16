@@ -7,3 +7,7 @@ Travis CI Badge
 
 Coverall Badge
 e43e63c78fb19fee3584c8529bd6894acebcd73ba048998c68eb3e11fa790e1d
+
+
+Code Climate
+[![Maintainability](https://api.codeclimate.com/v1/badges/34452fcf67b2ce1e6cf0/maintainability)](https://codeclimate.com/github/prizemac/Andela-Challenge-Store-Manager/maintainability)
