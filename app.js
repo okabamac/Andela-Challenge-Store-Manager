@@ -175,7 +175,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-app.post('/api/v1/product/:admin-password', (request, response) => {
-    products.unshift(request.body);
+app.post('/api/v1/record/:attendant-password', (request, response) => {
+    sales.unshift(request.body);
     response.send(request.body);
 });
