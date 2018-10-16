@@ -234,4 +234,8 @@ app.post('/api/v1/record/:attendant-password', (request, response) => {
   response.send(request.body);
 });
 
-app.listen(3000, () => console.info('Application running on port 3000'));
+const server = app.listen(3000, () => {
+  console.log('App running on port 3000');
+});
+
+module.exports = server;
