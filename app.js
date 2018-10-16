@@ -175,22 +175,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-app.get("/api/v1/sales/:id/:password", (request, response) => {
-    const searchId = parseInt(request.params.id);
-    const password = parseInt(request.params.password);
-    let reply;
-    for (let i = 0; i < sales.length; i++) {
-        if (isNaN(searchId)) {
-            reply = {
-                message: "ID must be a number"
-            }
-        } else if (sales[i].id === searchId && password === 1000) {
-            reply = sales[i];
-        } else if (typeof searchId === "number" && sales[i].id !== searchId && password !== 1000) {
-            reply = {
-                message: "This sale record does not exist"
-            }
-        }
-    }
-    response.send(reply);
+app.post('/api/v1/product/:admin-password', (request, response) => {
+    products.unshift(request.body);
+    response.send(request.body);
 });
