@@ -175,6 +175,6 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-app.get("/api/v1/products", (request, response) => {
-    response.send(products);
+app.get("/api/v1/admin/sales", (request, response) => {
+    response.send(sales);
 });
