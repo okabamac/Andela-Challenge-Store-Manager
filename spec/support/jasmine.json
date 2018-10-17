@@ -3,7 +3,10 @@
   "spec_files": [
     "allSalesSpec.js",
     "productByIdSpec.js",
-    "allProductsSpec.js"
+    "allProductsSpec.js",
+    "postProductSpec.js",
+    "postSaleSpec.js",
+    "saleByIdSpec.js"
   ],
   "helpers": [
     "helpers/**/*.js"
