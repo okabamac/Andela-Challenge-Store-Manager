@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "jasmine",
-    "start": "node app.js",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
