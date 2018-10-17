@@ -30,3 +30,7 @@ Where password is 1000
 5. To post a particular
 https://dry-hamlet-16502.herokuapp.com/api/v1/product/admin-password
 Admin password can be any number
+
+6. To post a sale record 
+https://dry-hamlet-16502.herokuapp.com/api/v1/record/:attendant-password
+Attendant password can be any passowrd
