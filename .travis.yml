@@ -7,10 +7,4 @@ cache:
   
 script: npm start
 
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  on:
-    branch: feature_branch
-  local_dir: "output"
+
