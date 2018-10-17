@@ -16,4 +16,4 @@ script:
   - codecov
 
 after_success:
-  - codeclimate < ./coverage/lcov.info
+  - npm run coveralls
