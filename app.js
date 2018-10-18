@@ -188,13 +188,9 @@ app.get("/api/v1/products/:id", (request, response) => {
       reply = {
         message: "ID must be a number"
       }
-    } else if (products[i].id === searchId) {
+    } if (products[i].id === searchId) {
       reply = products[i];
-    } else if (typeof searchId === "number" && products[i].id !== searchId) {
-      reply = {
-        message: "Product with that ID does not exist"
-      }
-    }
+    } 
   }
   response.send(reply);
 });
